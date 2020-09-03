@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+chmod 777 docker/bin/*
+
+docker-compose build && docker-compose up -d

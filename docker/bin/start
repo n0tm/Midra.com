@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo
+echo "Initializing virtual services with docker-compose.yml"
+echo
+
+echo + creating services
+docker-compose up -d --build --remove-orphans
+
+echo + check running services
+docker-compose ps
